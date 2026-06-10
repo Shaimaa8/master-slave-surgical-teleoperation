@@ -288,12 +288,7 @@ Three windows open simultaneously:
   <i>Version 2 launch terminal — Gazebo, controller spawners, IK node, and /clock bridge</i>
 </p>
 
-<table>
-  <tr>
-    <td align="center"><img src="docs/images/gazebo_v2.png" width="300"/><br/>Gazebo Harmonic slave-arm simulation</td>
-    <td align="center"><img src="docs/images/rviz_v2.png" width="300"/><br/>RViz2 master-arm visualisation</td>
-  </tr>
-</table>
+
 
 <p align="center">
   <img src="docs/images/final_v2.png" width="600"/><br/>
