@@ -357,24 +357,35 @@ $$z = L_1 + L_2 \cos q_2 + L_3 \cos(q_2 + q_3)$$
 
 ### Inverse Kinematics
 
-Given target $\mathbf{p}_d = (x_d, y_d, z_d)$:
+Given target
 
-**Base rotation:**
-\theta_1 = \mathrm{atan2}(y_d, x_d)
+$$
+\mathbf{p}_d = (x_d, y_d, z_d)
+$$
 
-**Workspace clamping:**
-r = \sqrt{x_d^2 + y_d^2}, \quad z' = z_d - L_1, \quad d = \sqrt{r^2 + z'^2}
-d \leftarrow \min\big(\max(d,\ |L_2 - L_3|),\ L_2 + L_3\big)
+**Base rotation**
 
-**Elbow angle (cosine rule):**
-\cos\theta_3 = \frac{d^2 - L_2^2 - L_3^2}{2 L_2 L_3}, \quad
-\theta_3 = \mathrm{atan2}\left(\sqrt{1 - \cos^2\theta_3},\ \cos\theta_3\right)
+$$
+\theta_1 = \operatorname{atan2}(y_d, x_d)
+$$
 
-**Shoulder angle:**
+**Workspace clamping**
 
-\alpha = \mathrm{atan2}(r, z'), \quad
-\cos\beta = \frac{d^2 + L_2^2 - L_3^2}{2 d L_2}, \quad
-\theta_2 = \alpha - \arccos(\cos\beta)
+$$
+r = \sqrt{x_d^2 + y_d^2}
+$$
+
+$$
+z' = z_d - L_1
+$$
+
+$$
+d = \sqrt{r^2 + z'^2}
+$$
+
+$$
+d \leftarrow \min\big(\max(d,|L_2-L_3|),L_2+L_3\big)
+$$
 
 ---
 
