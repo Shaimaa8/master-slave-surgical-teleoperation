@@ -375,6 +375,7 @@ d \leftarrow \min\big(\max(d,\ |L_2 - L_3|),\ L_2 + L_3\big)
 \alpha = \mathrm{atan2}(r, z'), \quad
 \cos\beta = \frac{d^2 + L_2^2 - L_3^2}{2 d L_2}, \quad
 \theta_2 = \alpha - \arccos(\cos\beta)
+
 ---
 
 ## Results
