@@ -5,12 +5,12 @@
 #include <ESP32Servo.h>
 
 // ===== WiFi =====
-#define WIFI_SSID     "ColdArea"
-#define WIFI_PASSWORD "12345678"
+#define WIFI_SSID     "xxxxxxxxx"
+#define WIFI_PASSWORD "xxxxxxxxx"
 
 // ===== Firebase =====
 #define FIREBASE_HOST    "https://robotics-project-c1746-default-rtdb.europe-west1.firebasedatabase.app"
-#define FIREBASE_API_KEY "AIzaSyAPLUSMP3kX0kfZcUIH9z_60LyO8f2c1X0"
+#define FIREBASE_API_KEY "xxxxxxxxx"
 
 // ===== Servo Pins =====
 #define SERVO1_PIN  18
