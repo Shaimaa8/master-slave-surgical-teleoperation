@@ -355,21 +355,21 @@ $$x = \cos q_1 \cdot r_{\text{plane}}, \quad y = \sin q_1 \cdot r_{\text{plane}}
 
 $$z = L_1 + L_2 \cos q_2 + L_3 \cos(q_2 + q_3)$$
 
-### Inverse Kinematics
+## Inverse Kinematics
 
-Given target
+Given target:
 
 $$
 \mathbf{p}_d = (x_d, y_d, z_d)
 $$
 
-**Base rotation**
+### Base Rotation
 
 $$
 \theta_1 = \operatorname{atan2}(y_d, x_d)
 $$
 
-**Workspace clamping**
+### Workspace Clamping
 
 $$
 r = \sqrt{x_d^2 + y_d^2}
@@ -386,6 +386,40 @@ $$
 $$
 d \leftarrow \min\big(\max(d,|L_2-L_3|),L_2+L_3\big)
 $$
+
+### Elbow Angle
+
+$$
+\cos\theta_3 =
+\frac{d^2-L_2^2-L_3^2}{2L_2L_3}
+$$
+
+$$
+\theta_3 =
+\operatorname{atan2}
+\left(
+\sqrt{1-\cos^2\theta_3},
+\cos\theta_3
+\right)
+$$
+
+### Shoulder Angle
+
+$$
+\alpha = \operatorname{atan2}(r,z')
+$$
+
+$$
+\cos\beta =
+\frac{d^2+L_2^2-L_3^2}
+{2dL_2}
+$$
+
+$$
+\theta_2 =
+\alpha - \arccos(\cos\beta)
+$$
+
 
 ---
 
