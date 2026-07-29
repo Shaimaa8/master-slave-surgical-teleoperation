@@ -476,9 +476,3 @@ $$
 2. J. R. Adler, "Remote robotic spine surgery," *Neurospine*, vol. 17, no. 1, pp. 1–2, Mar. 2020.
 3. Z. Khan et al., "Telesurgery and robotics: an improved and efficient era," *Cureus*, vol. 13, no. 4, p. e14310, Apr. 2021.
 4. Intuitive Surgical, "da Vinci Surgical System," Intuitive Surgical Inc., Sunnyvale, CA, USA.
-
----
-
-<p align="center">
-  <i>Biomedical & Robotics Engineering Department — 2025</i>
-</p>
